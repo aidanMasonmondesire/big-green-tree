@@ -25,13 +25,18 @@ html #slide-1 {
 
 #top_nav {
     background-color: white;
+    border-top: 3px forestgreen solid;
+    border-bottom: 3px forestgreen solid;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    max-height: 500px;
 }
 
 .nav_bar {
     height: 100px;
     flex-grow: 1;
-    margin-left: 450px;
+    background-color: white;
+    max-height: 500px;
+
 }
 
 #nav_button {
@@ -42,6 +47,7 @@ html #slide-1 {
     height: 100px;
     justify-content: center;
     line-height: 100px;
+    background-color: white;
 }
 
 .logo {
@@ -54,15 +60,8 @@ html #slide-1 {
     width: 100px;
 }
 
-#bar {
-    background-color: forestgreen;
-    width: 100%;
-    height: 3px;
-    margin-bottom: 2px;
-}
-
 .container {
-    display: flex;
+    display: flexbox;
 }
 
 /* section for home tab */
@@ -71,7 +70,7 @@ html #slide-1 {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-gap: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 /* section for about tab */
@@ -79,15 +78,16 @@ html #slide-1 {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-gap: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #chris_about {
-    height: 400px;
+    height:400px;
     width: auto;
-    display:block;
-    margin:auto;
+    display:flexbox;
     padding: 15px;
+    max-height: 400px;
+    min-height: 4px;
 }
 
 
@@ -96,7 +96,7 @@ html #slide-1 {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-gap: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 /* reference for how created this: https://www.w3docs.com/tools/code-editor/7903 */
 .slider { /* this is the section of the page that actually shows the images, anything outside of these dimensions are hidden (sort of like a keyhole that looks into the image container)*/
@@ -157,6 +157,7 @@ html #slide-1 {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-gap: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -164,7 +165,8 @@ html #slide-1 {
 /* section for the boxes of each section */
 
 #middle_sec{
-    height: 550px;
+    min-height: 550px;
+    max-height: fit-content;
     background-color: white;
     border-radius: 25px;
     border: 3px solid forestgreen;
@@ -248,4 +250,9 @@ html #slide-1 {
 
 #back_to_top a{
     color: forestgreen;
+}
+
+/* section for when the screen's width is 600px or smaller */
+@media only screen and (max-width: 600px) {
+    
 }
