@@ -5,7 +5,12 @@
 
 img {
     display: inline-flex;
+    flex-direction: column;
     height: 100%;
+}
+
+div{
+    display: flexbox;
 }
 
 body{
@@ -29,6 +34,7 @@ html #slide-1 {
     border-bottom: 3px forestgreen solid;
     font-family: 'Barlow Semi Condensed', sans-serif;
     max-height: 500px;
+    flex-direction: row;
 }
 
 .nav_bar {
@@ -36,7 +42,7 @@ html #slide-1 {
     flex-grow: 1;
     background-color: white;
     max-height: 500px;
-
+    flex-direction: row;
 }
 
 #nav_button {
@@ -62,6 +68,8 @@ html #slide-1 {
 
 .container {
     display: flexbox;
+    flex-direction: row;
+    text-align: center;
 }
 
 /* section for home tab */
@@ -84,10 +92,10 @@ html #slide-1 {
 #chris_about {
     height:400px;
     width: auto;
-    display:flexbox;
     padding: 15px;
     max-height: 400px;
     min-height: 4px;
+    justify-content: center;
 }
 
 
@@ -181,6 +189,7 @@ html #slide-1 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 100;
     font-size: 25px;
+    border: 3px red;
 }
 
 #logo2 img {
@@ -254,5 +263,18 @@ html #slide-1 {
 
 /* section for when the screen's width is 600px or smaller */
 @media only screen and (max-width: 600px) {
-    
+    #middle_sec{
+        display: flexbox;
+        flex-direction: column;
+        min-height: 550px;
+        max-height: fit-content;
+        background-color: white;
+        border-radius: 25px;
+        border: 3px solid forestgreen;
+        color: rgb(0, 0, 0);
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: 100;
+        font-size: 50px;
+        padding: 10px;
+    }
 }
