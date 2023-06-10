@@ -115,6 +115,11 @@ html #slide-1 {
     border: 3px red;
 }
 
+#paragraph2{
+    display: none; 
+    font-size: 25px;
+}
+
 /* reference for how created this: https://www.w3docs.com/tools/code-editor/7903 */
 .slider { /* this is the section of the page that actually shows the images, anything outside of these dimensions are hidden (sort of like a keyhole that looks into the image container)*/
     width: 900px;
@@ -192,11 +197,6 @@ html #slide-1 {
     font-size: 50px;
     padding: 10px;
 }
-
-#middle_sec #paragraph2{
-    visibility: hidden;
-    font-size: 1px;
-  }
 
 #paragraph {
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -277,17 +277,15 @@ html #slide-1 {
 /* section for when the screen's width is 600px or smaller */
 @media only screen and (max-width: 600px) {
     .slider { /* this is the section of the page that actually shows the images, anything outside of these dimensions are hidden (sort of like a keyhole that looks into the image container)*/
-        visibility: hidden;
-        width: 1px;
-        height: 1px;
+        display: none;
       }
 
       #middle_sec #paragraph_gallery{
-        visibility: hidden;
+        display: none;
       }
 
       #middle_sec #paragraph2{
-        visibility: visible;
+        display: block;
         font-size: 20px;
       }
 
